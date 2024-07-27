@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Electricity Meter Reading Extraction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Meter Reading Extraction</h1>
+        <p>Upload an image of an electricity meter to extract the meter number and reading.</p>
+        <form id="upload-form">
+            <input type="file" id="image-input" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result" style="display: none;">
+            <h2>Extracted Information</h2>
+            <p><strong>Meter Number:</strong> <span id="meter-number"></span></p>
+            <p><strong>Meter Reading:</strong> <span id="meter-reading"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
